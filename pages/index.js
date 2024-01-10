@@ -4,22 +4,32 @@ import Image from "next/image";
 import { useState } from "react";
 import Add from "../components/Add";
 import AddButton from "../components/AddButton";
-import Featured from "../components/Featured";
 import PizzaList from "../components/PizzaList";
 import styles from "../styles/Home.module.css";
+import Body from "../components/Body"
+import Advert from "../components/Advert"
+import Services from "../components/Services"
+import Strength from "../components/Strength";
+import Testimonial from "../components/Testimonial";
 
 export default function Home({ pizzaList, admin }) {
   const [close, setClose] = useState(true);
   return (
     <div className={styles.container}>
       <Head>
-        <title>Pizza Restaurant in Newyork</title>
+        <title>Flit Pizza Ordering App</title>
         <meta name="description" content="Best pizza shop in town" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Featured />
+      <Body/>  
+      <Advert/>
+       <Services/>   
+      <Strength/>  
+       <Testimonial/>
+     
+      
       {<AddButton setClose={setClose} />}
-      <PizzaList pizzaList={pizzaList} />
+     
       {!close && <Add setClose={setClose} />}
     </div>
   );

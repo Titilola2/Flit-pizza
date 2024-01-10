@@ -1,0 +1,85 @@
+/* body.module.css */
+.container {
+    display: flex;
+    position: relative;
+    margin-left: 20px;
+    width: 100%; /* Set to 100% to take the full width */
+    background-color: white;
+}
+
+.leftside {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 37%;
+    margin-left: 20px;
+}
+
+.right{
+    position:relative;/* Set to 50% to occupy half of the width */
+}
+
+.bodyText {
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+    font-weight: bold;
+    color: black;
+}
+
+.miniText {
+    width: 100%;
+    color: darkslategray;
+    font-weight: 800;
+}
+
+.btn {
+    padding: 1.5rem;
+}
+
+.circle {
+    
+    background-color: rgb(232, 172, 7);
+    width: 250px;
+    height: 450px; 
+    border-radius: 220px 0 0 220px;
+    justify-content: flex-end;
+    
+}
+
+.circleContainer{
+    width: 38rem;
+    position: absolute;
+    top: 0rem;
+    left: 35rem;
+}
+
+
+  .semicircle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px; /* Adjust the width to your preference */
+    height: 100px; /* Adjust the height to your preference */
+    background-color: #ff0000; /* Adjust the background color to your preference */
+    border-radius: 0 0 50px 0; /* This creates a semicircle at the right end */
+  }
+  
+
+.pizzaa{
+    position: relative;
+    top: 22rem;
+    left: 35rem;
+}
+.pizzab{
+    position: relative;
+    top:-14.5rem;
+    left: 18rem;
+}
+.onion{
+    position: relative;
+    top:-17rem;
+    left: 15rem;
+
+
+}

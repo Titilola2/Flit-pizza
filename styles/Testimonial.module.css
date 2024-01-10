@@ -1,0 +1,46 @@
+.heading{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    justify-content: left;
+    align-items: start;
+    margin-left: 50px;
+    margin-top: 20px;
+
+}
+
+.heading>:nth-child(1){
+    color: blue;
+    font-size: 1rem;
+     
+}
+.strength{
+    display: flex;
+    margin-top: 3rem;
+    margin-left: 200px;
+    margin-right: 200px;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+.feature{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-items: center;
+   gap: 1rem; 
+}
+.ImageWrap{
+    width: 10rem;
+    height: 5rem;
+}
+.feature>:nth-child(2){
+    font-weight: bold;
+}
+.feature>:nth-child(3){
+    color: darkslategray;
+    word-wrap: break-word;
+    width: 20rem;
+    text-align: center;
+}

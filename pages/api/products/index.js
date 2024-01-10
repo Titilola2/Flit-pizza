@@ -25,6 +25,7 @@ export default async function handler(req, res) {
       const product = await Product.create(req.body);
       res.status(201).json(product);
     } catch (err) {
+      console.error("Error creating product:", err);
       res.status(500).json(err);
     }
   }

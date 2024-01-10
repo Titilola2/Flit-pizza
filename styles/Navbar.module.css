@@ -1,7 +1,7 @@
 .container {
-  height: 100px;
+  height: 150px;
   padding: 0px 50px;
-  background-color: #d1411e;
+  background-color: whitesmoke;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,6 +14,8 @@
   flex: 1;
   display: flex;
   align-items: center;
+ 
+ 
 }
 
 .item:nth-child(2) {
@@ -25,16 +27,19 @@
 }
 
 .callButton {
-  background-color: white;
+
   border-radius: 50%;
   padding: 10px;
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 170px;
 }
 
 .texts {
-  margin-left: 20px;
-  color: white;
+  margin-left: 110px;
+  
+  width: 270px;
+  height: 140px;
+ 
 }
 
 .text:first-child {
@@ -52,7 +57,13 @@
   display: flex;
   align-items: center;
   list-style: none;
-  color: white;
+  color: black;
+  justify-content: space-between;
+    margin-left: 160px;
+    width: 400px;
+    font-size: medium;
+    font-weight: 450px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .listItem {
@@ -63,6 +74,7 @@
 
 .cart{
     position: relative;
+    color: rgb(14, 13, 13);
 }
 
 .counter{
@@ -72,13 +84,14 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: white;
+    background-color: #d1411e;
     padding: 3px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    color: #d1411e;
+    color: white;
+
 }
 
 @media screen and (max-width:480px) {
@@ -89,4 +102,73 @@
   .item:nth-child(1) {
     flex: 3;
   }
+}
+
+.header{
+  border: 2px solid rgb(248, 223, 223);
+  position: sticky;
+ background-color: white;
+ 
+
+}
+.logoContainer {
+  display: flex;
+  
+}
+
+.logo {
+  height: 40px;
+  margin-left: 20px;
+
+}
+
+.log {
+margin-left: 115px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 160px;
+  width: 400px;
+  font-size: medium;
+  font-weight: 450px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.rightSide{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin-right: 20px;
+} 
+.cart{
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  z-index: 99;
+  justify-content: space-around;
+}
+.search{
+  justify-content: space-around;
+  margin-right: 10px;
+}
+.menu>li:hover{
+  cursor: pointer;
+  color: darkred;
+}
+
+.badge{
+  position:absolute;
+  display: flex;
+  background-color: brown;
+  color: aliceblue;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -0.5rem;
 }
